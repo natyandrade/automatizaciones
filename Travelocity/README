@@ -1,0 +1,8 @@
+Tener en cuenta a la hora de ejecutar:
+
+Se utilizan las siguientes versiones: 
+
+Gradle 5.6.2
+Serenity 1.9.9
+Chrome 81.0.4044.92 (64 bits)
+Driver 81, java 1.8.0_241
