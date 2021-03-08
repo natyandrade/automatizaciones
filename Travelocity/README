@@ -19,6 +19,9 @@ El proyecto de las pruebas automatizadas se llama Travelocity y el proyecto de l
 
 
 --> Pasos para realizar la ejecución automatizada:
+	
+	
+	Como precondición para ejecutar los escenarios de Login y Create account es solicitar a desarrollo desactivar reCaptcha.
 
 -	Si se desea ejecutar desde Eclipse: ir a la carpeta Runner y ejecutar cada archivo Runner, dando click derecho y seleccionar la opción RunAs, luego seleccionar la opción JUnitTest. A continuacion, el programa ejecuta cada escenario.
 
