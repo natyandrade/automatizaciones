@@ -8,10 +8,10 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features="src/test/resources/features/look_things_to_do.feature",
+		features="src/test/resources/features/search_things_to_do.feature",
 		glue="com.devco.qa.travelocity.stepdefinitions",
 		snippets=SnippetType.CAMELCASE)
 
-public class LookThingsToDoRunner {
+public class SearchThingsToDoRunner {
 
 }
