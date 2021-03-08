@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"book a hotel room","book a hotel room","ERROR","2021-03-07T13:36:07.94-05:00[America/Bogota]","0.0","94.82"
+"create an account Travelocity","create account","ERROR","2021-03-05T21:06:37.907-05:00[America/Bogota]","0.0","45.08"
+"Search for a travel with Travelocity","search for a travel","SUCCESS","2021-03-05T21:05:21.678-05:00[America/Bogota]","0.0","52.54"
+"sign in Travelocity","sign in with correct credentials","PENDING","2021-02-18T14:19:40.305-05:00[America/Bogota]","0.0","63.1"
+"sign in Travelocity","sign in travelocity with correct credentials","ERROR","2021-03-05T21:07:39.405-05:00[America/Bogota]","0.0","55.55"

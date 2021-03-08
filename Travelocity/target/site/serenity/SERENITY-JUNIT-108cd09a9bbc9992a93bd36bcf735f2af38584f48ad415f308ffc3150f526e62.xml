@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="sign in Travelocity" skipped="0" tests="1" time="47.88" timestamp="2021-02-18 09:14:26"><testcase name="sign in travelocity with correct credentials"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="sign in Travelocity" skipped="0" tests="1" time="55.55" timestamp="2021-03-05 09:07:39"><testcase name="sign in travelocity with correct credentials"><error message="Expected condition failed: waiting for By.xpath: //*[@id=&quot;gc-custom-header-nav-bar-acct-menu&quot;]/button/div to be displayed (tried for 20 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: '3RO-QVISAOR6SV', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'&#10;Driver info: driver.version: unknown" type="java.lang.AssertionError">Expected condition failed: waiting for By.xpath: //*[@id="gc-custom-header-nav-bar-acct-menu"]/button/div to be displayed (tried for 20 second(s) with 100 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '3RO-QVISAOR6SV', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //*[@id="gc-custom-header-nav-bar-acct-menu"]/button/div to be displayed (tried for 20 second(s) with 100 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '3RO-QVISAOR6SV', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: driver.version: unknown&#13;
+com.devco.qa.travelocity.stepdefinitions.SignInStepDefinition.sheShouldLoginInToTravelocityHomePage(SignInStepDefinition.java:54)&#13;
+✽.she should login in to travelocity home page(src/test/resources/features/sign_in.feature:11)&#13;
+</system-err></testcase></testsuite>

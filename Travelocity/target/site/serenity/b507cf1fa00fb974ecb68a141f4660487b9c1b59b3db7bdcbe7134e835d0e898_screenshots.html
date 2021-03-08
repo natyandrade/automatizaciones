@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-02-2021 11:57</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-03-2021 19:13</span>
     <br style="clear:left"/>
 </div>
 
@@ -150,9 +150,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">search for a travel
+                                <span class="failing-color">search for a travel
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -171,8 +171,8 @@
     <div id="contenttilttle">
             <div class="screenshotFailure panel panel-danger">
 
-                        <div class="panel-heading title="Invalid element state exception: invalid element state">
-                            Invalid element state exception: invalid element state
+                        <div class="panel-heading title="Element should be enabled exception: Expected enabled element was not enabled">
+                            Element should be enabled exception: Expected enabled element was not enabled
                         </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger" data-toggle="modal"
@@ -190,17 +190,17 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                    org.openqa.selenium.InvalidElementStateException
+                                    net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
                                 </h4>
                             </div>
                             <div class="modal-body">
                                     <h5>
-                                        <pre>invalid element state<br>  (Session info: chrome=81.0.4044.92)<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: '3RO-QVISAOR6SV', ip: '172.17.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\nataanan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br>Session ID: 0295e10f08dbade9ec288a8a4dbdecfc</pre>
+                                        <pre>Expected enabled element was not enabled</pre>
                                     </h5>
-                                    com.devco.qa.travelocity.tasks.SearchTravel.performAs(SearchTravel.java
-                                    :25) <br>
+                                    com.devco.qa.travelocity.tasks.SelectTravel.performAs(SelectTravel.java
+                                    :22) <br>
                                     com.devco.qa.travelocity.stepdefinitions.SearchTravelStepDefinition.sheSearchATravel(SearchTravelStepDefinition.java
-                                    :43) <br>
+                                    :49) <br>
                                     cucumber.runner.Runner.runPickle(Runner.java
                                     :80) <br>
                                     org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
@@ -217,6 +217,29 @@
                                     :209) <br>
                             </div>
 
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="stacktraceModalLabel">
+                                        Caused by: org.openqa.selenium.TimeoutException
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                        <pre>Expected condition failed: waiting for By.xpath: //*[@id=&quot;preferred-airline-CM&quot;] to be enabled (tried for 20 second(s) with 100 milliseconds interval)</pre>
+                                    <pre>
+                                        com.devco.qa.travelocity.tasks.SelectTravel.performAs(SelectTravel.java :22) <br>
+                                        com.devco.qa.travelocity.stepdefinitions.SearchTravelStepDefinition.sheSearchATravel(SearchTravelStepDefinition.java :49) <br>
+                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
+                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89) <br>
+                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :541) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :763) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :463) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :209) <br>
+                                    </pre>
+                                </div>
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
                                     Close
@@ -228,17 +251,30 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource1685327817442650622.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource4817145957457123202.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b2deecd7a71a2592b8d8f06e32244f0024937fb0cab2a03117026bb72eac1c5c.png" title="Given that Naty wants go to travelocity page" width="1366"/>
-                <img src="57f72080dd7adf556b95e07a53b090f07b0ffe80d850ca9721dfd6323a3be7eb.png" title="Naty opens the browser on Travelocity Home Page" width="1366"/>
-                <img src="57f72080dd7adf556b95e07a53b090f07b0ffe80d850ca9721dfd6323a3be7eb.png" title="Naty opens the Home page user interfaces" width="1366"/>
-                <img src="b2deecd7a71a2592b8d8f06e32244f0024937fb0cab2a03117026bb72eac1c5c.png" title="Naty Go to the option Fligths" width="1366"/>
-                <img src="b2deecd7a71a2592b8d8f06e32244f0024937fb0cab2a03117026bb72eac1c5c.png" title="Naty clicks on Button Flights" width="1366"/>
-                <img src="4a330d4851c0d98b56584510e2303b37105c806089733a60af909f6ac3fcd836.png" title="Naty enters 'Colombia' into Target From: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="84551450b3490de154830ae96b4b6db9eba4fff64b36a8821800066ac2a5792d.png" title="Given that Naty wants go to travelocity page" width="1366"/>
+                <img src="cf055fc12c7a34e4142f2926b4409c98432b621dfac1c8e3268fd4365425a067.png" title="Naty opens the browser on Travelocity Home Page" width="1366"/>
+                <img src="cf055fc12c7a34e4142f2926b4409c98432b621dfac1c8e3268fd4365425a067.png" title="Naty opens the Home page user interfaces" width="1366"/>
+                <img src="5a64e48ce4fb05bbe09bae3bbdcbc0427be18dfbe2bba6dee927ab46f9604475.png" title="Naty Go to the option Fligths" width="1366"/>
+                <img src="5a64e48ce4fb05bbe09bae3bbdcbc0427be18dfbe2bba6dee927ab46f9604475.png" title="Naty clicks on Button Flights" width="1366"/>
+                <img src="9c6eb13ad785465efe0c216c9c219fe0d89a540de32a3039c0f782a41f7b5989.png" title="Naty Search Travel from Medellin to Cancun" width="1366"/>
+                <img src="3ee162b8dce5fc893a4ae94f19d11710df91d7f23d2ff8c1c9b9804538447611.png" title="Naty clicks on Button One Way" width="1366"/>
+                <img src="2058b2f58112a0e34c382bedcac0b640acc286af8c5c2d0ffeaa504083084b76.png" title="Naty clicks on Button From" width="1366"/>
+                <img src="99d316dc1ed0166f3d1cabe5e9dff3df09519bbb5ec4724c79c095368228ddd2.png" title="Naty enters 'Medellin' into Target From" width="1366"/>
+                <img src="8f9ef16a0ae9defc6e0b6548fc524e22981c763bc5da5ca483848c40e9afc094.png" title="Naty clicks on Target From Result" width="1366"/>
+                <img src="c61c6af3d7265ec9f6a53151cbdeb7c68d976ace44f21d660542db0f8c8e6f89.png" title="Naty clicks on Button To" width="1366"/>
+                <img src="14c19de251499c66638c4122ea2bffaefbde0ddc10fc35161aa71368b4811b29.png" title="Naty clicks on Target To" width="1366"/>
+                <img src="58b8d2cdd18c1a040778cae55c995049d14efb6634aff98790af5b6e6f521197.png" title="Naty enters 'Cancun' into Target To" width="1366"/>
+                <img src="e249ee5f13b99a2add93659f09d1defed604b6bc5a618afed7c5ac3d08a67475.png" title="Naty clicks on Target To Result" width="1366"/>
+                <img src="028433eb34a660bb93b0f4d28e7f72db5820da92cf7179cd7a27a899eb9c22f5.png" title="Naty clicks on Button Departing" width="1366"/>
+                <img src="028433eb34a660bb93b0f4d28e7f72db5820da92cf7179cd7a27a899eb9c22f5.png" title="Naty Select check in" width="1366"/>
+                <img src="8095bfb8cd91144e361ce0a9deedf141f8b83716f41b3ad558bab99e225827bb.png" title="Naty clicks on Button Done Departing" width="1366"/>
+                <img src="9c6eb13ad785465efe0c216c9c219fe0d89a540de32a3039c0f782a41f7b5989.png" title="Naty clicks on Button Search Travel" width="1366"/>
+                <img src="c6dcc963023c2368a411c2104dc1ffbcbebc771da24d399c055d218f2489c425.png" title="Naty clicks on Check Travel One: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

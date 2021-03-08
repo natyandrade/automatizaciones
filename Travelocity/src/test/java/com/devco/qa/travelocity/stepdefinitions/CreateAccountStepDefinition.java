@@ -9,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.devco.qa.travelocity.models.CreateAccountModel;
 import com.devco.qa.travelocity.questions.CreateAccountQuestion;
-import com.devco.qa.travelocity.tasks.AcceptHuman;
-import com.devco.qa.travelocity.tasks.AdmitNotRobot;
 import com.devco.qa.travelocity.tasks.CreateAccount;
 import com.devco.qa.travelocity.tasks.GoTo;
 import com.devco.qa.travelocity.tasks.OpenTheBrowser;
@@ -46,13 +44,11 @@ public class CreateAccountStepDefinition {
 	    naty.wasAbleTo(OpenTheBrowser.on(travelocityHomePage),
 	    		GoTo.SignIn(),
 	    		PayIn.CreateAccount(),
-	    		WaitFor.seconds(30));
+	    		WaitFor.seconds(5));
 	}
 
 	@When("^she create an account with the correct data$")
 	public void sheCreateAnAccountWithTheCorrectData(List<CreateAccountModel> createAccountModel) throws Exception {
-		naty.attemptsTo(AdmitNotRobot.with(),
-				AcceptHuman.with());
 		naty.attemptsTo(CreateAccount.in(createAccountModel.get(0)));
 	}
 

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"sign in Travelocity","sign in with correct credentials","PENDING","2021-02-18T14:19:40.305-05:00[America/Bogota]","0.0","63.1"
+"sign in Travelocity","sign in travelocity with correct credentials","ERROR","2021-03-05T21:07:39.405-05:00[America/Bogota]","0.0","55.55"

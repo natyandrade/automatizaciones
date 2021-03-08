@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"login Travelocity","sign in travelocity with correct credentials","PENDING","2021-03-05T17:41:43.145-05:00[America/Bogota]","0.0","4.43"
+"login Travelocity","sign in travelocity with incorrect user","PENDING","2021-03-05T17:41:47.573-05:00[America/Bogota]","0.0","1.19"
+"login Travelocity","sign in travelocity with incorrect password","PENDING","2021-03-05T17:41:48.769-05:00[America/Bogota]","0.0","0.67"
+"login with incorrect user in Travelocity","login with incorrect user","PENDING","2021-03-04T15:13:56.876-05:00[America/Bogota]","0.0","0.71"
