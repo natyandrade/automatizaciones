@@ -6,18 +6,20 @@ El proyecto de las pruebas automatizadas se llama Travelocity y el proyecto de l
 
 ## Construido con 🛠️
 
-_Estas fueron las tecnologias que se utilizaron para el desarrollo de las automatizaciones:_
+_Estas fueron las tecnologias que se utilizaron para el desarrollo de las automatizaciones:
 
 •	Gradle 5.6.2
 •	Serenity BDD 1.9.9
 •	Cucumber
 •	Chrome 81.0.4044.92 (64 bits)
 •	Driver Chrome 81, java 1.8.0_241
+_
+
 
 
 ### Pre-requisitos 📋
 
-_Como precondición para ejecutar los escenarios de Login y Create account de las preubas automatizadas es necesario solicitar a desarrollo desactivar reCaptcha._
+_Como precondición para ejecutar los escenarios de Login y Create account de las pruebas automatizadas es necesario solicitar a desarrollo desactivar reCaptcha._
 
 
 ## Ejecutando las pruebas ⚙️
@@ -27,34 +29,38 @@ _El proyecto de las pruebas automatizadas se llama Travelocity y el proyecto de 
 
 ### Ejecutando las Pruebas Manuales 🔩
 
-_-	Pasos a seguir si se desea ejecutar desde un IDE: 
+
+-	Pasos a seguir si se desea ejecutar desde un IDE: 
 
 1. Ir a la carpeta del proyecto Travelocity_manual.
 2. Ir a la carpeta Runner.
 3. Ejecutar cada archivo Runner: dando click derecho y seleccionar la opción RunAs, luego seleccionar la opción JUnitTest. 
 4. A continuacion, el programa pregunta si los pasos son exitosos, responder si o no, según el caso y al final marcará el escenario como fallido o exitoso.
 
+
 -	Pasos a seguir si se desea ejecutar desde la terminal: 
 
 1. Ingresar a la carpeta del proyecto Travelocity_manual.
 2. Ubicados ahi, ejecutar la terminal y escribir gradle build.
-3. Esperamos que descargue las dependencias y realice las ejecuciones de las pruebas._
+3. Esperamos que descargue las dependencias y realice las ejecuciones de las pruebas.
 
 
 ### Ejecutando las Pruebas Automatizadas ⌨️
 
-_Pasos a seguir si se desea ejecutar desde un IDE: 
+-	Pasos a seguir si se desea ejecutar desde un IDE: 
 
 1. Ir a la carpeta del proyecto Travelocity.
 2. Ir a la carpeta Runner.
 3. Ejecutar cada archivo Runner, dando click derecho y seleccionando la opción RunAs, luego seleccionar la opción JUnitTest.
 4. A continuacion, el programa ejecuta el escenario.
 
+
 -	Pasos a seguir si se desea ejecutar desde la terminal: 
 
 1. Ingresar a la carpeta del proyecto Travelocity.
 2. Ubicados ahi, ejecutar la terminal y escribir gradle build.
 3. Esperamos que descargue las dependencias y realice las ejecuciones de las pruebas.
+
 
 -	Pasos a seguir si se desea ejecutar desde la terminal todas las pruebas:
 
